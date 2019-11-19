@@ -1,0 +1,12 @@
+.itemContainer {
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    width: 300px;
+    margin: 10px 0 10px 12px;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}

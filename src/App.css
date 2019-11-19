@@ -1,22 +1,77 @@
-.App {
-  text-align: center;
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+.container {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 10px;
+  width: 400px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #09d3ac;
+.containerList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.listEmptyMessage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.addButton {
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 10px;
+  width: 300px;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 14px;
+}
+
+.addButton:hover {
+  cursor: pointer;
+}
+
+.addButton:active {
+    outline: none;
+    border: none;
+}
+
+.addButton:focus {
+    outline:0;
+}
+
+.addButton:disabled {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
 }
